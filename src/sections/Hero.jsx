@@ -59,7 +59,7 @@ export default function Hero() {
           animate="visible"
         >
           <motion.h1
-            className="text-6xl md:text-7xl font-extrabold tracking-tight text-darkBg dark:text-lightBg mb-8 drop-shadow-sm"
+            className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight text-darkBg dark:text-lightBg mb-8 drop-shadow-sm"
             variants={itemUp}
           >
             <span className="text-accentBlue dark:text-lightSecondaryBg">{text}</span>
@@ -67,12 +67,12 @@ export default function Hero() {
             <span className="block mt-4">개발자 신예성입니다.</span>
           </motion.h1>
           <motion.p
-            className="text-xl md:text-2xl text-darkSecondaryBg dark:text-lightSecondaryBg mb-10 leading-relaxed"
+            className="text-base sm:text-lg md:text-2xl text-darkSecondaryBg dark:text-lightSecondaryBg mb-10 leading-relaxed"
             variants={itemUp}
           >
             사용자의 문제를 기술로 해결하며 더 나은 경험을 만드는 개발자입니다.
           </motion.p>
-          <motion.div className="flex gap-4 mb-10 justify-center" variants={itemUp}>
+          <motion.div className="flex flex-col sm:flex-row gap-4 mb-10 justify-center" variants={itemUp}>
             <a
               href="#projects"
               className="px-8 py-3 rounded-full bg-darkBg dark:bg-accentBlue text-lightBg font-semibold hover:bg-darkSecondaryBg dark:hover:bg-accentBlue transition shadow-md hover:shadow-lg"
