@@ -40,14 +40,14 @@ export default function Education() {
 
       <motion.div
         variants={containerVariants}
-        className="relative max-w-3xl w-full mt-16 z-10"
+        className="relative max-w-xl sm:max-w-3xl w-full mt-16 z-10 px-4"
       >
         {/* Timeline Line */}
-        <div className="absolute left-1/2 -translate-x-1/2 h-full w-1 bg-lightSecondaryBg dark:bg-darkSecondaryBg rounded-full" />
+        <div className="absolute left-6 sm:left-1/2 sm:-translate-x-1/2 h-full w-1 bg-lightSecondaryBg dark:bg-darkSecondaryBg rounded-full" />
 
         {/* Timeline Item */}
-        <motion.div className="relative flex items-start gap-8" variants={itemVariants}>
-          <div className="absolute left-1/2 -translate-x-1/2 mt-1 w-8 h-8 bg-lightBg dark:bg-darkBg rounded-full border-4 border-accentBlue dark:border-lightSecondaryBg flex items-center justify-center z-10">
+        <motion.div className="relative flex flex-col sm:flex-row items-start sm:gap-8" variants={itemVariants}>
+          <div className="absolute left-3 sm:left-1/2 sm:-translate-x-1/2 mt-1 w-8 h-8 bg-lightBg dark:bg-darkBg rounded-full border-4 border-accentBlue dark:border-lightSecondaryBg flex items-center justify-center z-10">
             <FaUserGraduate className="text-accentBlue dark:text-lightSecondaryBg" />
           </div>
           <div className="bg-lightSecondaryBg/80 dark:bg-darkSecondaryBg/80 backdrop-blur-sm p-4 md:p-8 rounded-2xl shadow-lg border border-lightSecondaryBg dark:border-darkSecondaryBg w-full">

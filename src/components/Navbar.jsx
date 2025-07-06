@@ -60,7 +60,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="fixed top-6 left-1/2 -translate-x-1/2 w-full px-4 md:w-[90vw] md:max-w-4xl z-50 rounded-2xl bg-lightSecondaryBg/80 dark:bg-darkSecondaryBg/80 backdrop-blur-md shadow-lg dark:shadow-darkBg/50 border border-lightSecondaryBg dark:border-darkSecondaryBg md:px-8 py-3 flex items-center justify-between">
+    <nav className="fixed top-6 left-1/2 -translate-x-1/2 w-full px-4 md:w-[90vw] md:max-w-4xl z-50 rounded-2xl bg-lightSecondaryBg/60 dark:bg-darkSecondaryBg/60 backdrop-blur-md shadow-lg dark:shadow-darkBg/50 border border-lightSecondaryBg dark:border-darkSecondaryBg md:px-8 py-3 flex items-center justify-between">
       <div className="text-xl font-extrabold tracking-tight text-darkBg dark:text-lightBg select-none">YeSeong</div>
       
       {/* Desktop Menu */}
@@ -105,7 +105,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.2 }}
-            className="absolute top-full left-0 w-full bg-lightSecondaryBg/90 dark:bg-darkSecondaryBg/90 backdrop-blur-md shadow-lg rounded-b-2xl py-4 sm:hidden"
+            className="absolute top-full left-0 w-full bg-lightSecondaryBg/70 dark:bg-darkSecondaryBg/70 backdrop-blur-md shadow-lg rounded-b-2xl py-4 sm:hidden"
           >
             <ul className="flex flex-col items-center space-y-4 text-base font-semibold text-darkSecondaryBg dark:text-lightSecondaryBg">
               {NAV.map((item) => (
