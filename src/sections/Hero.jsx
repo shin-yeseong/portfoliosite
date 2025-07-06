@@ -98,7 +98,7 @@ export default function Hero() {
         <AnimatePresence>
           {showScroll && (
             <motion.div
-              className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center opacity-70"
+              className="absolute bottom-10 w-full flex flex-col items-center opacity-70"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 20 }}
