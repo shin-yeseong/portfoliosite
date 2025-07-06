@@ -24,7 +24,7 @@ export default function Education() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
-      className="relative w-full h-full flex flex-col items-center justify-start pt-24 md:pt-40 pb-16 md:pb-24 overflow-hidden"
+      className="relative w-full h-full flex flex-col items-center justify-start pt-16 md:pt-40 pb-8 md:pb-24 overflow-hidden"
     >
       <motion.div
         className="absolute top-0 left-0 w-full h-full bg-grid-lightSecondaryBg/50 dark:bg-darkSecondaryBg/50 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
@@ -34,8 +34,8 @@ export default function Education() {
         variants={itemVariants}
         className="z-10"
       >
-        <h2 className="text-4xl md:text-5xl font-extrabold text-darkBg dark:text-lightBg mb-4 tracking-tight">Education</h2>
-        <p className="text-base md:text-lg text-darkSecondaryBg dark:text-lightSecondaryBg text-center">배움의 여정과 성장 기록</p>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-darkBg dark:text-lightBg mb-4 tracking-tight">Education</h2>
+        <p className="text-sm sm:text-base md:text-lg text-darkSecondaryBg dark:text-lightSecondaryBg text-center">배움의 여정과 성장 기록</p>
       </motion.div>
 
       <motion.div
@@ -50,11 +50,11 @@ export default function Education() {
           <div className="absolute left-1/2 -translate-x-1/2 mt-1 w-8 h-8 bg-lightBg dark:bg-darkBg rounded-full border-4 border-accentBlue dark:border-lightSecondaryBg flex items-center justify-center z-10">
             <FaUserGraduate className="text-accentBlue dark:text-lightSecondaryBg" />
           </div>
-          <div className="bg-lightSecondaryBg/80 dark:bg-darkSecondaryBg/80 backdrop-blur-sm p-6 md:p-8 rounded-2xl shadow-lg border border-lightSecondaryBg dark:border-darkSecondaryBg w-full">
-            <p className="text-xs md:text-sm font-semibold text-accentBlue dark:text-lightSecondaryBg mb-1">{education.period}</p>
-            <h3 className="text-xl md:text-2xl font-bold text-darkBg dark:text-lightBg">{education.university}</h3>
-            <p className="text-sm md:text-md text-darkSecondaryBg dark:text-lightSecondaryBg font-medium mb-4">{education.major}</p>
-            <p className="text-sm md:text-base text-darkSecondaryBg dark:text-lightSecondaryBg leading-relaxed mb-4 md:mb-6">{education.desc}</p>
+          <div className="bg-lightSecondaryBg/80 dark:bg-darkSecondaryBg/80 backdrop-blur-sm p-4 md:p-8 rounded-2xl shadow-lg border border-lightSecondaryBg dark:border-darkSecondaryBg w-full">
+            <p className="text-xs sm:text-sm font-semibold text-accentBlue dark:text-lightSecondaryBg mb-1">{education.period}</p>
+            <h3 className="text-xl sm:text-2xl font-bold text-darkBg dark:text-lightBg">{education.university}</h3>
+            <p className="text-sm sm:text-md text-darkSecondaryBg dark:text-lightSecondaryBg font-medium mb-4">{education.major}</p>
+            <p className="text-sm sm:text-base text-darkSecondaryBg dark:text-lightSecondaryBg leading-relaxed mb-4 md:mb-6">{education.desc}</p>
             
             <h4 className="font-bold text-darkBg dark:text-lightBg mb-3 flex items-center gap-2">
               <FaLaptopCode />
