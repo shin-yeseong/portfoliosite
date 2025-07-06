@@ -28,7 +28,7 @@
 
 1.  **저장소 클론**:
     ```bash
-    git clone [YOUR_GITHUB_REPO_URL]
+    git clone https://github.com/shin-yeseong/portfoliosite
     cd portfolio
     ```
     (여기서 `[YOUR_GITHUB_REPO_URL]`은 본인의 GitHub 저장소 URL로 대체해야 합니다.)
