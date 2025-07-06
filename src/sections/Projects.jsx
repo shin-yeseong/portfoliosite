@@ -30,7 +30,7 @@ export default function Projects() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
-      className="relative w-full h-full flex flex-col items-center justify-start pt-32 md:pt-40 pb-24 overflow-hidden"
+      className="relative w-full h-full flex flex-col items-center justify-start pt-24 md:pt-40 pb-16 md:pb-24 overflow-hidden"
     >
       {/* floating blob background */}
       <motion.div
@@ -38,10 +38,10 @@ export default function Projects() {
         animate={{ y: [0, 30, 0] }}
         transition={{ repeat: Infinity, duration: 10, ease: "easeInOut" }}
       />
-      <motion.h2 variants={itemVariants} className="text-5xl font-extrabold text-darkBg dark:text-lightBg mb-16 tracking-tight z-10">Projects</motion.h2>
+      <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl font-extrabold text-darkBg dark:text-lightBg mb-12 md:mb-16 tracking-tight z-10">Projects</motion.h2>
       <motion.div
         variants={containerVariants}
-        className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl w-full px-4 z-10"
+        className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl w-full px-4 z-10"
       >
         {list.map((p, i) => (
           <motion.div

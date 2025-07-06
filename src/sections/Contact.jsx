@@ -26,7 +26,7 @@ export default function Contact() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
-      className="relative w-full h-full flex flex-col items-center justify-start pt-32 md:pt-40 pb-24 overflow-hidden"
+      className="relative w-full h-full flex flex-col items-center justify-start pt-24 md:pt-40 pb-16 md:pb-24 overflow-hidden"
     >
       {/* bottom blurred blob */}
       <motion.div
@@ -34,7 +34,7 @@ export default function Contact() {
         animate={{ scale: [1, 1.08, 1] }}
         transition={{ repeat: Infinity, duration: 10, ease: "easeInOut" }}
       />
-      <motion.h2 variants={itemVariants} className="text-5xl font-extrabold text-darkBg dark:text-lightBg mb-12 tracking-tight z-10">Contact</motion.h2>
+      <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl font-extrabold text-darkBg dark:text-lightBg mb-8 md:mb-12 tracking-tight z-10">Contact</motion.h2>
       <motion.div variants={containerVariants} className="flex flex-col gap-6 max-w-md w-full z-10">
         {contacts.map((c) => (
           <motion.a
@@ -43,11 +43,11 @@ export default function Contact() {
             target="_blank"
             rel="noopener noreferrer"
             variants={itemVariants}
-            className="flex items-center gap-4 px-8 py-5 rounded-2xl bg-lightSecondaryBg dark:bg-darkSecondaryBg border border-lightSecondaryBg dark:border-darkSecondaryBg shadow-none hover:shadow-lg transition text-lg font-semibold text-darkBg dark:text-lightBg hover:text-accentBlue dark:hover:text-accentBlue"
+            className="flex items-center gap-4 px-6 py-4 rounded-2xl bg-lightSecondaryBg dark:bg-darkSecondaryBg border border-lightSecondaryBg dark:border-darkSecondaryBg shadow-none hover:shadow-lg transition text-base md:text-lg font-semibold text-darkBg dark:text-lightBg hover:text-accentBlue dark:hover:text-accentBlue"
           >
-            <span className="text-2xl text-darkSecondaryBg dark:text-lightSecondaryBg">{c.icon}</span>
+            <span className="text-xl md:text-2xl text-darkSecondaryBg dark:text-lightSecondaryBg">{c.icon}</span>
             <span>{c.label}</span>
-            <span className="ml-auto text-base text-darkSecondaryBg dark:text-lightSecondaryBg font-normal">{c.value}</span>
+            <span className="ml-auto text-sm md:text-base text-darkSecondaryBg dark:text-lightSecondaryBg font-normal">{c.value}</span>
           </motion.a>
         ))}
       </motion.div>
