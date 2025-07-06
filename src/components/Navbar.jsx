@@ -60,8 +60,8 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="fixed top-6 left-1/2 -translate-x-1/2 w-full px-4 md:w-[90vw] md:max-w-4xl z-50 rounded-2xl bg-lightSecondaryBg/60 dark:bg-darkSecondaryBg/60 backdrop-blur-md shadow-lg dark:shadow-darkBg/50 border border-lightSecondaryBg dark:border-darkSecondaryBg md:px-8 py-3 flex items-center justify-between">
-      <div className="text-xl font-extrabold tracking-tight text-darkBg dark:text-lightBg select-none">YeSeong</div>
+    <nav className="fixed top-6 left-1/2 -translate-x-1/2 w-full px-4 md:w-[90vw] md:max-w-4xl z-50 rounded-2xl bg-lightSecondaryBg/60 dark:bg-darkSecondaryBg/60 backdrop-blur-md shadow-lg dark:shadow-darkBg/50 border border-lightSecondaryBg dark:border-darkSecondaryBg md:px-8 py-3 flex items-center justify-end">
+      {/* <div className="text-xl font-extrabold tracking-tight text-darkBg dark:text-lightBg select-none">YeSeong</div> */}
       
       {/* Desktop Menu */}
       <ul className="hidden sm:flex items-center space-x-2 md:space-x-8 text-base font-semibold text-darkSecondaryBg dark:text-lightSecondaryBg">
@@ -87,11 +87,11 @@ export default function Navbar() {
       </ul>
 
       {/* Mobile Menu Toggle */}
-      <div className="sm:hidden flex items-center">
+      <div className="flex items-center">
         <DarkModeToggle />
         <button 
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} 
-          className="p-2 rounded-full text-darkSecondaryBg dark:text-lightSecondaryBg hover:bg-lightSecondaryBg/50 dark:hover:bg-darkBg/50 transition-colors ml-2"
+          className="p-2 rounded-full text-darkSecondaryBg dark:text-lightSecondaryBg hover:bg-lightSecondaryBg/50 dark:hover:bg-darkBg/50 transition-colors ml-2 sm:hidden"
         >
           {isMobileMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
         </button>
