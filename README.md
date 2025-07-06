@@ -1,5 +1,9 @@
 # 🚀 My Portfolio Website
 
+[![Deployed with Vercel](https://vercel.com/button)](https://vercel.com/yeseongshins-projects/portfolio)
+
+**[Live Demo](https://yeseong.vercel.app)**
+
 환영합니다! 이 저장소는 저의 개인 포트폴리오 웹사이트의 소스 코드를 담고 있습니다. 이 웹사이트는 저의 기술 스택, 프로젝트 경험, 그리고 저에 대한 정보를 효과적으로 보여주기 위해 개발되었습니다.
 
 ## ✨ 주요 기능
@@ -14,13 +18,15 @@
 
 이 프로젝트는 다음 기술들을 사용하여 구축되었습니다:
 
-*   **Frontend**:
-    *   React.js
-    *   Tailwind CSS
-    *   Framer Motion (애니메이션)
-    *   Vite (빌드 도구)
-*   **Deployment**:
-    *   Vercel
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer%20Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+
+## 📸 스크린샷
+
+<!-- 여기에 웹사이트의 스크린샷을 추가해주세요! 예시: ![Website Screenshot](path/to/your/screenshot.png) -->
 
 ## 🏃‍♂️ 로컬에서 실행하기
 
@@ -49,6 +55,6 @@
 
 ## 📄 라이선스
 
-이 프로젝트는 MIT 라이선스에 따라 배포됩니다. 자세한 내용은 `LICENSE` 파일을 참조하세요. (만약 `LICENSE` 파일이 없다면, 이 문구를 제거하거나 라이선스 파일을 추가해야 합니다.)
+이 프로젝트는 MIT 라이선스에 따라 배포됩니다.
 
 ---
