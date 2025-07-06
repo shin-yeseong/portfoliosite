@@ -4,7 +4,7 @@
 
 **[Live Demo](https://yeseong.vercel.app)**
 
-환영합니다! 이 저장소는 저의 개인 포트폴리오 웹사이트의 소스 코드를 담고 있습니다. 이 웹사이트는 저의 기술 스택, 프로젝트 경험, 그리고 저에 대한 정보를 효과적으로 보여주기 위해 개발되었습니다.
+저의 개인 포트폴리오 웹사이트의 소스 코드를 담고 있습니다. 이 웹사이트는 저의 기술 스택, 프로젝트 경험, 그리고 저에 대한 정보를 효과적으로 보여주기 위해 개발되었습니다.
 
 ## ✨ 주요 기능
 
@@ -24,9 +24,6 @@
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-## 📸 스크린샷
-
-<!-- 여기에 웹사이트의 스크린샷을 추가해주세요! 예시: ![Website Screenshot](path/to/your/screenshot.png) -->
 
 ## 🏃‍♂️ 로컬에서 실행하기
 
@@ -37,8 +34,6 @@
     git clone https://github.com/shin-yeseong/portfoliosite
     cd portfolio
     ```
-    (여기서 `[YOUR_GITHUB_REPO_URL]`은 본인의 GitHub 저장소 URL로 대체해야 합니다.)
-
 2.  **의존성 설치**:
     ```bash
     npm install
