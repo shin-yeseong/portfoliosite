@@ -40,39 +40,37 @@ export default function Education() {
 
       <motion.div
         variants={containerVariants}
-        className="relative max-w-xl sm:max-w-3xl w-full mt-16 z-10 px-4"
+        className="relative max-w-xl sm:max-w-3xl w-full mt-16 z-10 px-4 flex flex-col gap-8"
       >
-        {/* Timeline Line */}
-        <div className="absolute left-6 sm:left-1/2 sm:-translate-x-1/2 h-full w-1 bg-lightSecondaryBg dark:bg-darkSecondaryBg rounded-full" />
-
-        {/* Timeline Item */}
-        <motion.div className="relative flex flex-col sm:flex-row items-start sm:gap-8" variants={itemVariants}>
-          <div className="absolute left-3 sm:left-1/2 sm:-translate-x-1/2 mt-1 w-8 h-8 bg-lightBg dark:bg-darkBg rounded-full border-4 border-accentBlue dark:border-lightSecondaryBg flex items-center justify-center z-10">
-            <FaUserGraduate className="text-accentBlue dark:text-lightSecondaryBg" />
-          </div>
-          <div className="bg-lightSecondaryBg/80 dark:bg-darkSecondaryBg/80 backdrop-blur-sm p-4 md:p-8 rounded-2xl shadow-lg border border-lightSecondaryBg dark:border-darkSecondaryBg w-full">
-            <p className="text-xs sm:text-sm font-semibold text-accentBlue dark:text-lightSecondaryBg mb-1">{education.period}</p>
+        {/* Education Item */}
+        <motion.div
+          variants={itemVariants}
+          className="bg-lightSecondaryBg/80 dark:bg-darkSecondaryBg/80 backdrop-blur-sm p-6 md:p-8 rounded-2xl shadow-lg border border-lightSecondaryBg dark:border-darkSecondaryBg w-full flex flex-col items-start"
+        >
+          <div className="flex items-center gap-3 mb-3">
+            <FaUserGraduate className="text-accentBlue dark:text-lightSecondaryBg text-2xl" />
             <h3 className="text-xl sm:text-2xl font-bold text-darkBg dark:text-lightBg">{education.university}</h3>
-            <p className="text-sm sm:text-md text-darkSecondaryBg dark:text-lightSecondaryBg font-medium mb-4">{education.major}</p>
-            <p className="text-sm sm:text-base text-darkSecondaryBg dark:text-lightSecondaryBg leading-relaxed mb-4 md:mb-6">{education.desc}</p>
-            
-            <h4 className="font-bold text-darkBg dark:text-lightBg mb-3 flex items-center gap-2">
-              <FaLaptopCode />
-              주요 수강 과목
-            </h4>
-            <motion.div variants={containerVariants} className="flex flex-wrap gap-2">
-              {education.courses.map((course) => (
-                <motion.span
-                  key={course}
-                  variants={itemVariants}
-                  className="px-3 py-1 rounded-full bg-lightSecondaryBg dark:bg-darkBg text-darkBg dark:text-lightBg text-sm font-medium border border-lightSecondaryBg dark:border-darkSecondaryBg"
-                  whileHover={{ scale: 1.05, y: -2 }}
-                >
-                  {course}
-                </motion.span>
-              ))}
-            </motion.div>
           </div>
+          <p className="text-sm sm:text-md text-darkSecondaryBg dark:text-lightSecondaryBg font-medium mb-1">{education.major}</p>
+          <p className="text-xs sm:text-sm font-semibold text-accentBlue dark:text-lightSecondaryBg mb-4">{education.period}</p>
+          <p className="text-sm sm:text-base text-darkSecondaryBg dark:text-lightSecondaryBg leading-relaxed mb-4 md:mb-6">{education.desc}</p>
+          
+          <h4 className="font-bold text-darkBg dark:text-lightBg mb-3 flex items-center gap-2">
+            <FaLaptopCode />
+            주요 수강 과목
+          </h4>
+          <motion.div variants={containerVariants} className="flex flex-wrap gap-2">
+            {education.courses.map((course) => (
+              <motion.span
+                key={course}
+                variants={itemVariants}
+                className="px-3 py-1 rounded-full bg-lightSecondaryBg dark:bg-darkBg text-darkBg dark:text-lightBg text-sm font-medium border border-lightSecondaryBg dark:border-darkSecondaryBg"
+                whileHover={{ scale: 1.05, y: -2 }}
+              >
+                {course}
+              </motion.span>
+            ))}
+          </motion.div>
         </motion.div>
       </motion.div>
     </motion.section>
