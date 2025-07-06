@@ -1,12 +1,54 @@
-# React + Vite
+# 🚀 My Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+환영합니다! 이 저장소는 저의 개인 포트폴리오 웹사이트의 소스 코드를 담고 있습니다. 이 웹사이트는 저의 기술 스택, 프로젝트 경험, 그리고 저에 대한 정보를 효과적으로 보여주기 위해 개발되었습니다.
 
-Currently, two official plugins are available:
+## ✨ 주요 기능
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*   **반응형 디자인**: 다양한 기기(데스크톱, 태블릿, 모바일)에서 최적화된 사용자 경험을 제공합니다.
+*   **프로젝트 쇼케이스**: 제가 참여했거나 직접 개발한 프로젝트들을 상세하게 소개합니다.
+*   **기술 스택**: 제가 다룰 수 있는 프로그래밍 언어, 프레임워크, 도구들을 명확하게 보여줍니다.
+*   **자기소개**: 저의 배경, 관심사, 그리고 연락처 정보를 제공합니다.
+*   **부드러운 스크롤 및 애니메이션**: 사용자 인터랙션을 향상시키는 부드러운 전환 효과와 애니메이션을 포함합니다.
 
-## Expanding the ESLint configuration
+## 🛠️ 기술 스택
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+이 프로젝트는 다음 기술들을 사용하여 구축되었습니다:
+
+*   **Frontend**:
+    *   React.js
+    *   Tailwind CSS
+    *   Framer Motion (애니메이션)
+    *   Vite (빌드 도구)
+*   **Deployment**:
+    *   Vercel
+
+## 🏃‍♂️ 로컬에서 실행하기
+
+이 프로젝트를 로컬 환경에서 실행하려면 다음 단계를 따르세요:
+
+1.  **저장소 클론**:
+    ```bash
+    git clone [YOUR_GITHUB_REPO_URL]
+    cd portfolio
+    ```
+    (여기서 `[YOUR_GITHUB_REPO_URL]`은 본인의 GitHub 저장소 URL로 대체해야 합니다.)
+
+2.  **의존성 설치**:
+    ```bash
+    npm install
+    # 또는 yarn install
+    ```
+
+3.  **개발 서버 시작**:
+    ```bash
+    npm run dev
+    # 또는 yarn dev
+    ```
+
+    이제 `http://localhost:5173` (또는 콘솔에 표시되는 다른 포트)에서 웹사이트를 확인할 수 있습니다.
+
+## 📄 라이선스
+
+이 프로젝트는 MIT 라이선스에 따라 배포됩니다. 자세한 내용은 `LICENSE` 파일을 참조하세요. (만약 `LICENSE` 파일이 없다면, 이 문구를 제거하거나 라이선스 파일을 추가해야 합니다.)
+
+---
