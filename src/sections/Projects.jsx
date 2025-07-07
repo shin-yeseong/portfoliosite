@@ -16,22 +16,37 @@ import { Pagination, Navigation } from 'swiper/modules';
 
 const list = [
   {
-    title: "금융 커뮤니티 앱",
-    img: "/thumb1.jpg",
-    desc: "실시간 금융 정보와 커뮤니티 기능을 제공하는 SPA 웹앱.",
-    stack: ["React", "Tailwind", "Framer Motion"],
-    github: "https://github.com/yourgithub/finance-app",
-    demo: "https://finance-app-demo.com"
+    title: "포트폴리오 웹사이트",
+    img: "/images/portfolio.png",
+    desc: "React와 Vite 기반의 반응형 포트폴리오. Framer Motion과 fullPage.js를 활용하여 동적 UX를 구현했습니다.",
+    stack: ["React", "Vite", "Tailwind CSS", "Framer Motion", "fullPage.js"],
+    github: "https://github.com/shin-yeseong/portfoliosite",
+    demo: "https://yeseong.vercel.app",
   },
   {
-    title: "포트폴리오 사이트",
-    img: "/thumb2.jpg",
-    desc: "개인 이력과 프로젝트를 소개하는 반응형 포트폴리오.",
-    stack: ["React", "Tailwind", "Framer Motion"],
-    github: "https://github.com/yourgithub/portfolio",
-    demo: "https://portfolio-demo.com"
+    title: "FINEED (청년 금융 커뮤니티 앱)",
+    img: "/images/fineed.png",
+    desc: "React Native로 개발된 청년 금융 커뮤니티 앱. API를 연동하여 금융 정보, 퀴즈, 챌린지 등의 기능을 제공합니다.",
+    stack: ["React Native", "Expo", "NativeWind", "Axios"],
+    github: "https://github.com/CSID-DGU/2025-1-SCS4031-DevDumpling-S2",
+    demo: null,
   },
-  // 추가 프로젝트...
+  {
+    title: "IF-CODE (전공 커뮤니티 사이트)",
+    img: "/images/if-code.png",
+    desc: "React와 Spring Boot 기반의 교육-IT 전공 커뮤니티. JWT 인증과 MongoDB를 활용한 Fullstack 프로젝트입니다.",
+    stack: ["React", "Spring Boot", "MongoDB", "JWT", "Git"],
+    github: "https://github.com/shin-yeseong/project_IF-CODE",
+    demo: null,
+  },
+  {
+    title: "REELVISION (영화 홍보/후원 플랫폼)",
+    img: "/images/reelvision.svg",
+    desc: "Django 템플릿 기반의 연극영화과 졸업작품 홍보 및 크라우드 펀딩 플랫폼. Toss Payments API를 연동했습니다.",
+    stack: ["Django", "JavaScript", "HTML/CSS", "Toss Payments"],
+    github: "https://github.com/CSID-DGU/2024-2-OSSProj-likemovie-02",
+    demo: null,
+  },
 ];
 
 export default function Projects() {
