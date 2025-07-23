@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
@@ -96,12 +97,14 @@ export default function Projects() {
                 transition={{ type: "spring", stiffness: 200 }}
               >
                 <div className="relative overflow-hidden h-56 flex items-center justify-center">
-                  <img
+                  <Image
                     src={p.img}
                     alt={p.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    layout="fill"
+                    objectFit="cover"
+                    className="group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                     <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                       <p className="text-lightBg text-sm mb-2">{p.desc}</p>
                       <div className="flex flex-wrap gap-2">
